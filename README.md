@@ -467,6 +467,142 @@ Supervisar el correcto funcionamiento de la aplicación, realizar configuracione
 El administrador debe:
 
 Instalar la aplicación en las computadoras de trabajo
+6. Contribución
+
+Esta sección describe cómo otros usuarios pueden participar en el desarrollo del proyecto, realizar mejoras, corregir errores o proponer nuevas funciones.
+
+Todas las contribuciones son bienvenidas, siempre que se sigan los pasos establecidos y buenas prácticas mencionadas a continuación.
+
+a. Guía de contribución para usuarios
+
+Antes de contribuir, el usuario debe:
+
+Tener conocimientos básicos de Git y GitHub.
+
+Tener instalado:
+
+Git
+
+Java o Python (según la versión del proyecto)
+
+VS Code
+
+Respetar la estructura del proyecto y los estándares de código.
+
+Evitar subir archivos innecesarios (carpetas temporales, archivos locales, etc.).
+
+Revisar los issues abiertos antes de comenzar para evitar duplicar esfuerzos.
+
+b. Pasos específicos para contribuir al repositorio
+
+A continuación se presenta un flujo completo para colaborar en el proyecto, desde clonar el repositorio hasta pedir que tus cambios sean integrados (merge).
+
+1. Clonar el repositorio
+
+Desde la terminal:
+
+git clone https://github.com/tu-usuario/tu-repositorio.git
+
+
+Entrar a la carpeta:
+
+cd tu-repositorio
+
+2. Crear un nuevo branch (rama de trabajo)
+
+Es importante que los colaboradores no trabajen directamente en la rama principal (main).
+
+Crear una rama con nombre descriptivo:
+
+git checkout -b feature/nueva-funcionalidad
+
+
+Ejemplos de nombres adecuados:
+
+feature/exportar-excel
+
+fix/error-en-formulario
+
+ui/mejorar-interfaz
+
+3. Realizar los cambios y guardarlos
+
+Modificar el código en VS Code y luego guardar los cambios para Git:
+
+git add .
+
+
+Confirmar los cambios:
+
+git commit -m "Descripción clara del cambio realizado"
+
+
+Ejemplo:
+
+git commit -m "Agregada función para validar campos vacíos"
+
+4. Subir los cambios al repositorio remoto
+
+Ya con la rama creada:
+
+git push origin feature/nueva-funcionalidad
+
+5. Crear un Pull Request (PR) en GitHub
+
+Entra a tu repositorio en GitHub
+
+Te aparecerá un mensaje del tipo:
+“Compare & pull request”
+
+Haz clic
+
+Escribe:
+
+Título del PR
+
+Descripción detallada de qué se cambió y por qué
+
+Enviar el PR
+
+6. Esperar revisión y merge
+
+El administrador del proyecto:
+
+Revisará los cambios
+
+Podrá solicitar correcciones
+
+Finalmente aprobará el PR
+
+Una vez aceptado, se hará merge hacia la rama principal.
+
+7. Actualizar tu repositorio local
+
+Después del merge, sincroniza tu repositorio local con:
+
+git checkout main
+git pull origin main
+
+
+Así tienes la última versión del proyecto y puedes comenzar una nueva mejora si lo deseas.
+
+📌 Resumen del flujo completo de contribución
+
+Clonar repositorio
+
+Crear rama nueva
+
+Modificar código
+
+Guardar cambios (add + commit)
+
+Subir rama (push)
+
+Crear Pull Request
+
+Esperar aprobación y merge
+
+Actualizar main local
 
 Verificar que se tenga Java, Git y VS Code configurados
 
