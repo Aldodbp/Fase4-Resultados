@@ -21,7 +21,83 @@ Como siguiente fase, el objetivo es agregar la función para exportar esta libre
   - Falta de control sobre entradas.
   - Dificultad para analizar tendencias.
   - Posibles errores al registrar proveedores nuevos.
+a. ¿Cómo instalar el ambiente de desarrollo?
+1. Requisitos previos
 
+Antes de iniciar, debes tener instalado:
+
+Visual Studio Code (VS Code)
+
+Java JDK 17 o superior
+
+Git
+
+Extensión de Java para VS Code (solo se instala desde la tienda de extensiones de VS Code)
+
+2. Clonar el repositorio
+
+En tu computadora:
+git clone https://github.com/tu-usuario/tu-repositorio.git
+cd tu-repositorio
+3. Abrir el proyecto en VS Code
+
+En VS Code:
+
+Archivo → Abrir carpeta
+
+Selecciona el repositorio clonado
+
+VS Code detectará que es un proyecto Java y descargará automáticamente las dependencias necesarias.
+
+4. Ejecutar el programa
+
+En VS Code:
+
+Abre el archivo Main.java
+
+Haz clic en Run (botón ▶️)
+
+La aplicación se abrirá en una ventana gráfica
+
+b. ¿Cómo ejecutar pruebas manualmente?
+
+Como la aplicación es sencilla (una interfaz gráfica que guarda proveedores y marcas), las pruebas también son manuales.
+
+1. Prueba de registro
+
+Abre la aplicación
+
+Ingresa un proveedor y una marca
+
+Haz clic en Agregar
+
+Verifica que aparezcan en la lista
+
+2. Prueba de vacíos
+
+Intenta agregar un registro sin llenar los campos
+
+La aplicación debe mostrar un mensaje de error o evitar la acción
+
+3. Prueba de persistencia (si aplica)
+
+Si tienes habilitado almacenamiento (archivo .txt o en memoria):
+
+Cierra la aplicación
+
+Vuelve a iniciarla
+
+Verifica si los datos se mantienen
+
+4. Prueba de interfaz
+
+Confirma que los botones responden
+
+Confirma que la aplicación no se cierra al interactuar
+
+c. ¿Cómo implementar la solución en producción?
+
+La aplicación puede instalarse de dos formas: localmente o en la nube con Heroku.
 ---
 
 ## ✔️ Solución Propuesta
