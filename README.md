@@ -806,3 +806,76 @@ Crear Pull Request
 Esperar aprobación y merge
 
 Actualizar main local
+
+7. Roadmap
+
+El roadmap presenta las mejoras y funcionalidades que se planean implementar en el futuro. Su propósito es guiar la evolución del proyecto, así como informar a los contribuyentes sobre las prioridades y etapas de desarrollo que se esperan.
+
+Este proyecto actualmente se encuentra en una fase Beta, por lo que las siguientes funciones están clasificadas según su complejidad y el impacto que tendrán en la aplicación.
+
+a. Requerimientos que se implementarán en un futuro
+🔹 Fase 1 – Mejoras básicas (Corto plazo)
+
+Estas funciones son las más cercanas a implementarse y buscan mejorar la experiencia del usuario final:
+
+Exportar proveedores y marcas a un archivo Excel
+
+Validación de campos vacíos y mensajes de error más amigables
+
+Mejoras visuales en la interfaz, como:
+
+Paleta de colores definida
+
+Botones estilizados
+
+Efectos al pasar el cursor
+
+Opción de editar y eliminar registros existentes
+
+Guardado de datos en un archivo local (.txt o .json)
+
+🔹 Fase 2 – Funcionalidades intermedias (Mediano plazo)
+
+Estas mejoras requieren mayor lógica o configuración adicional:
+
+Implementación de una base de datos local (SQLite)
+
+Creación de una pantalla de reportes básicos (cuántas marcas por proveedor, cuántos proveedores nuevos, etc.)
+
+Incorporación de filtros de búsqueda por proveedor o marca
+
+Estructura mejorada del proyecto con patrones de diseño simples
+
+🔹 Fase 3 – Expansión del sistema (Largo plazo)
+
+Funciones avanzadas que transforman la aplicación en un sistema más profesional:
+
+Integración con una base de datos remota (MySQL o PostgreSQL)
+
+Sincronización en la nube o despliegue en servicios como:
+
+Heroku
+
+Render
+
+Railway
+
+Implementación de:
+
+Roles de usuario (Administrador / Usuario básico)
+
+Accesos protegidos con contraseña
+
+Generación de reportes avanzados:
+
+PDF
+
+Excel con gráficos
+
+Integración con un panel web o aplicación web paralela
+
+Visualización del Roadmap
+Fase	Funciones principales	Tiempo estimado
+Fase 1 – Corto plazo	Exportar Excel, interfaz mejorada, CRUD básico	1–2 semanas
+Fase 2 – Mediano plazo	Base de datos local, reportes simples, filtros	3–5 semanas
+Fase 3 – Largo plazo	DB remota, nube, roles, reportes avanzados	2–3 meses
