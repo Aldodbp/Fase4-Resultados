@@ -280,3 +280,112 @@ VS Code generará un archivo:
 /dist/registro-proveedores.jar
 Para ejecutar el programa en cualquier computadora:
 java -jar registro-proveedores.jar
+4. Configuración
+
+Esta sección explica cómo se configura el producto y cómo se ajustan los requerimientos necesarios para que funcione correctamente.
+
+a. Configuración del producto (archivos de configuración)
+
+Actualmente, la aplicación es sencilla y no requiere archivos de configuración complejos. Sin embargo, el proyecto incluye una estructura mínima que permite organizar la información y preparar el sistema para futuras expansiones.
+
+Archivos y carpetas relevantes:
+/src
+   Main.java              → Archivo principal donde se ejecuta la aplicación
+   Controlador.java       → Maneja la lógica del programa
+   Proveedor.java         → Clase modelo (proveedor y marcas)
+resources/
+   config.properties      → Archivo para configuraciones simples (opcional)
+README.md                 → Documentación del proyecto
+
+Archivo opcional: config.properties
+
+Si deseas agregar configuraciones básicas, puede incluir:
+
+modo=local
+guardar_datos=false
+ruta_exportacion=./export/
+
+
+(Esto no es obligatorio, pero sirve para mejor presentación del proyecto.)
+
+b. Configuración de los requerimientos
+
+Para que el proyecto funcione correctamente, se deben configurar las siguientes herramientas:
+
+1. Configuración del entorno Java
+
+Instalar Java JDK 17 o superior
+
+Agregar la variable de entorno JAVA_HOME (si es necesario)
+
+Verificar la instalación con:
+
+java -version
+
+2. Configuración en Visual Studio Code
+
+En VS Code:
+
+Instalar las siguientes extensiones:
+
+Extension Pack for Java
+
+Debugger for Java
+
+Java Test Runner (opcional)
+
+Abrir el proyecto:
+
+Archivo → Abrir carpeta → seleccionar repositorio
+
+VS Code descargará y configurará automáticamente:
+
+Dependencias del proyecto
+
+Classpaths
+
+Sistema de compilación interno
+
+3. Configuración del control de versiones (GitHub)
+
+Para trabajar correctamente con el repositorio:
+
+Iniciar git:
+
+git init
+
+
+Configurar tu nombre de usuario:
+
+git config --global user.name "TuNombre"
+
+
+Configurar tu correo:
+
+git config --global user.email "tuemail@example.com"
+
+
+Subir cambios al repositorio:
+
+git add .
+git commit -m "Primer commit"
+git push origin main
+
+4. Configuración futura (si el proyecto crece)
+
+Estas configuraciones no son necesarias ahora, pero puedes mencionarlas porque muestran visión de escalabilidad:
+
+Activar base de datos SQLite
+
+Configurar exportación a Excel
+
+Integración con API web
+
+Variables de entorno para producción (Heroku o Render)
+
+Ejemplo de variables futuras:
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=1234
+EXPORTAR_EXCEL=true
