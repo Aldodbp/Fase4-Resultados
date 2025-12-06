@@ -389,3 +389,148 @@ DB_HOST=localhost
 DB_USER=root
 DB_PASS=1234
 EXPORTAR_EXCEL=true
+5. Uso
+
+Esta sección describe cómo utilizar la aplicación tanto desde la perspectiva del usuario final como del usuario administrador.
+El propósito es asegurar que cualquier persona que abra la herramienta sepa cómo operar el sistema sin necesidad de conocimientos técnicos avanzados.
+
+a. Manual de referencia para usuario final
+
+Esta parte explica el funcionamiento básico de la aplicación para los usuarios que solo necesitan registrar y consultar información.
+
+📌 Objetivo del usuario final
+
+Permitir registrar proveedores y sus marcas asociadas de forma sencilla, rápida y con una interfaz amigable.
+
+📌 Cómo usar la aplicación (paso a paso)
+1. Abrir la aplicación
+
+La ventana principal mostrará:
+
+Campos para escribir:
+
+Nombre del proveedor
+
+Marca relacionada
+
+Botón Agregar
+
+Botón Limpiar
+
+Lista con todos los registros agregados
+
+2. Registrar un proveedor
+
+Escribe el nombre del proveedor en el campo correspondiente.
+
+Escribe la marca asociada.
+
+Haz clic en el botón Agregar.
+
+El registro aparecerá automáticamente en la lista de la parte inferior.
+
+3. Ver los registros agregados
+
+Todos los proveedores registrados se visualizarán en una tabla o lista.
+
+Ejemplo:
+
+Proveedor       | Marca
+--------------------------
+Proveedor A     | Marca 1
+Proveedor B     | Marca 2
+
+4. Limpiar los campos
+
+Si deseas borrar lo que escribiste antes de agregar:
+
+Haz clic en Limpiar
+
+Ambos campos volverán a quedar vacíos
+
+5. Cerrar la aplicación
+
+Cierra la ventana desde la X cuando hayas terminado.
+(No se eliminan datos accidentalmente.)
+
+b. Manual de referencia para usuario administrador
+
+Esta sección describe las funciones que un administrador o encargado del sistema necesita conocer para mantener la aplicación.
+
+📌 Objetivo del administrador
+
+Supervisar el correcto funcionamiento de la aplicación, realizar configuraciones y preparar futuras mejoras.
+
+📌 Responsabilidades del administrador
+1. Instalación y actualización del sistema
+
+El administrador debe:
+
+Instalar la aplicación en las computadoras de trabajo
+
+Verificar que se tenga Java, Git y VS Code configurados
+
+Actualizar la aplicación cuando haya nuevas versiones
+
+Descargar los cambios desde GitHub
+
+Ejemplo:
+
+git pull origin main
+
+2. Mantenimiento de los archivos de configuración
+
+El administrador puede modificar parámetros en:
+
+/resources/config.properties
+
+
+Ejemplos de configuraciones:
+
+modo=local
+exportar_excel=false
+ruta_logs=/logs/
+
+3. Respaldo de datos (si aplica)
+
+Si la aplicación guarda datos en archivos locales, el administrador debe:
+
+Hacer una copia del archivo antes de actualizaciones
+
+Guardarlo en una carpeta segura
+
+Asegurar que no se borren los registros por error
+
+4. Soporte a usuarios
+
+El administrador deberá:
+
+Ayudar al usuario final si no puede abrir la aplicación
+
+Solucionar errores básicos (ejemplo: Java no instalado)
+
+Reportar fallas o sugerencias en GitHub
+
+5. Implementación en ambientes adicionales
+
+Si la empresa decide implementar:
+
+Exportación a Excel
+
+Base de datos
+
+Sincronización en la nube
+
+Versión en Heroku
+
+El administrador será quien configure estos servicios.
+
+📌 Diferencias entre usuario final y administrador
+Actividad	Usuario Final	Administrador
+Registrar proveedor	✔ Sí	✔ Sí
+Consultar registros	✔ Sí	✔ Sí
+Instalar aplicación	❌ No	✔ Sí
+Modificar configuración	❌ No	✔ Sí
+Actualizar el sistema	❌ No	✔ Sí
+Respaldo de información	❌ No	✔ Sí
+Resolver problemas técnicos	❌ No	✔ Sí
